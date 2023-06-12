@@ -11,7 +11,3 @@ function goToHome() {
     console.log('Settings');
   }
   
-  function goToCalories() {
-    console.log('Calories');
-  }
-  

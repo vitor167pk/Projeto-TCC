@@ -6,33 +6,39 @@
 </head>
 <body>
   <header>
-    <button class="purple-button" onclick="goToHome()">Home</button>
-    <button class="purple-button" onclick="goToHistory()">History</button>
-    <button class="purple-button" onclick="goToSettings()">Settings</button>
+    <button class="dark-green-button" onclick="goToHome()">Home</button>
+    <button class="dark-green-button" onclick="goToHistory()">History</button>
+    <button class="dark-green-button" onclick="goToSettings()">Settings</button>
   </header>
 
   <main>
-    <div id="water-circle">
-      <span id="water-amount">0 ml</span>
-    </div>
-
     <h2>Daily Record</h2>
-    <table>
+    <table id="daily-record-table">
       <thead>
         <tr>
-          <th>Date</th>
-          <th>Water Consumed</th>
+          <th>Protein</th>
+          <th>Carbs</th>
+          <th>Fat</th>
         </tr>
       </thead>
-      <tbody id="daily-record-body">
+      <tbody>
         <!-- Registros diários serão adicionados aqui via JavaScript -->
       </tbody>
     </table>
-  </main>
 
-  <footer>
-    <button class="purple-button" onclick="goToCalories()">Calories</button>
-  </footer>
+    <h2>Last Meals</h2>
+    <table id="last-meals-table">
+      <thead>
+        <tr>
+          <th>Meal</th>
+          <th>Calories</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Últimas refeições serão adicionadas aqui via JavaScript -->
+      </tbody>
+    </table>
+  </main>
 
   <script src="script.js"></script>
 </body>
