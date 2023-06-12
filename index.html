@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Macro Tracker</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <header>
+    <button class="purple-button" onclick="goToHome()">Home</button>
+    <button class="purple-button" onclick="goToHistory()">History</button>
+    <button class="purple-button" onclick="goToSettings()">Settings</button>
+  </header>
+
+  <main>
+    <div id="water-circle">
+      <span id="water-amount">0 ml</span>
+    </div>
+
+    <h2>Daily Record</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Date</th>
+          <th>Water Consumed</th>
+        </tr>
+      </thead>
+      <tbody id="daily-record-body">
+        <!-- Registros diários serão adicionados aqui via JavaScript -->
+      </tbody>
+    </table>
+  </main>
+
+  <footer>
+    <button class="purple-button" onclick="goToCalories()">Calories</button>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
