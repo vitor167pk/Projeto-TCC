@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Macro Tracker</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <header>
+    <button class="dark-green-button" onclick="goToHome()">Home</button>
+    <button class="dark-green-button" onclick="goToHistory()">History</button>
+    <button class="dark-green-button" onclick="goToSettings()">Settings</button>
+  </header>
+
+  <main>
+    <h2>Daily Record</h2>
+    <table id="daily-record-table">
+      <thead>
+        <tr>
+          <th>Protein</th>
+          <th>Carbs</th>
+          <th>Fat</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Registros diários serão adicionados aqui via JavaScript -->
+      </tbody>
+    </table>
+
+    <h2>Last Meals</h2>
+    <table id="last-meals-table">
+      <thead>
+        <tr>
+          <th>Meal</th>
+          <th>Calories</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Últimas refeições serão adicionadas aqui via JavaScript -->
+      </tbody>
+    </table>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
